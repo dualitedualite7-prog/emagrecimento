@@ -1,0 +1,10 @@
+# Configurações de build para a Netlify
+[build]
+  command = "yarn build"
+  publish = "dist"
+  
+# Redirecionamento para Single Page Applications (SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
